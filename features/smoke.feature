@@ -35,15 +35,20 @@ Scenario Outline: Check network homepage for radionav and listen link
   When I follow "iPlayer Radio"
   Then I arrive on "/radio"
 
+  Scenario: Check radionav categories
+  Given I am on "/radio"
+  When I follow "Categories"
+  Then I can see "All Categories"
+
 Scenario Outline: Check selected stations links
   Given I am on "/radio/stations"
   When I follow <network>
   Then I arrive on <network_homepage>
 
   Examples: of networks and homepages
-  | network   | network_homepage  |
-  | "Radio 2" | "/radio2"         |
-  | "BBC Radio Berkshire" | "/radioberkshire"         |
+  | network               | network_homepage  |
+  | "Radio 2"             | "/radio2"         |
+  | "BBC Radio Berkshire" | "/radioberkshire" |
 
 
 

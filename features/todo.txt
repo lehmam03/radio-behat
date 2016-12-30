@@ -1,0 +1,5 @@
+Work out how to intergrate/run against nightingale
+Look into improving feature files to remove quotes everywhere
+Work out how to handle visibility as well as presence of items
+Look at randomising the networks on each run instead of checking a fixed subset (avoid being exhaustive, these need to be quick and responsive)
+
